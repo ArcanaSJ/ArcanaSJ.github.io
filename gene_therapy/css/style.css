@@ -1,0 +1,1806 @@
+/*--------------------------------------------------------------------- 
+File Name: style.css 
+---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- 
+import Fonts
+---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+/*****---------------------------------------- 1)
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- 
+import Files 
+---------------------------------------------------------------------*/
+
+@import url(normalize.css);
+@import url(animate.min.css);
+@import url(bootstrap.min.css);
+@import url(font-awesome.min.css);
+@import url(owl.carousel.min.css);
+@import url(nice-select.css);
+@font-face {
+     font-family: 'helveticaregular';
+     src: url('../fonts/helvetica_400-webfont.woff2') format('woff2'), url('../fonts/helvetica_400-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+/*--------------------------------------------------------------------- 
+basic 
+---------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+}
+
+.container {
+     max-width: 1170px;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+
+/*font-family: 'Roboto', sans-serif;*/
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+h1 {
+     font-size: 24px;
+}
+
+h2 {
+     font-size: 22px;
+}
+
+h3 {
+     font-size: 18px;
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #212121;
+     text-decoration: none!important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 0px;
+     font-weight: 500;
+     font-size: 15px;
+     line-height: 24px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+ :focus {
+     outline: 0;
+}
+
+.btn-custom {
+     margin-top: 20px;
+     background-color: transparent !important;
+     border: 2px solid #ddd;
+     padding: 12px 40px;
+     font-size: 16px;
+}
+
+.lead {
+     font-size: 18px;
+     line-height: 30px;
+     color: #767676;
+     margin: 0;
+     padding: 0;
+}
+
+.form-control:focus {
+     border-color: #ffffff !important;
+     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+     border: none !important;
+}
+
+.badge {
+     font-weight: 500;
+}
+
+blockquote {
+     margin: 20px 0 20px;
+     padding: 30px;
+}
+
+button {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+}
+
+.full {
+     float: left;
+     width: 100%;
+}
+
+.full {
+     width: 100%;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+
+
+/**-- heading section --**/
+
+.titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.titlepage h2 {
+    text-transform: uppercase;
+     font-size: 45px;
+     color: #353d47;
+     line-height: 50px;
+     font-weight: bold;
+     padding: 0;
+     display: inline-block;
+}
+
+.d_flex {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.read_more {
+     font-size: 17px;
+     background-color: #05254d;
+     color: #fff;
+    
+     width: 100%;
+     max-width: 275px;
+     text-align: center;
+     display: inline-block;
+     transition: ease-in all 0.5s;
+     font-weight: bold;
+     height: 75px;
+     text-transform: uppercase;
+     line-height: 75px;
+}
+
+.read_more:hover {
+     background: #ed1c24;
+     color: #fff;
+     transition: ease-in all 0.5s;
+}
+
+.text_align_left {
+     text-align: left;
+}
+
+.text_align_right {
+     text-align: right;
+}
+
+.text_align_center {
+     text-align: center;
+}
+
+
+/*-- header --*/
+
+.header-area  {
+     padding: 30px 16px;
+     color: #f1f1f1;
+     width: 100%;
+     z-index: 9999;
+     height: 87px;
+     background:#ed242e;
+}
+
+
+.logo_sm {display: none;}
+
+
+.logo_midle figure{
+    position: absolute;
+    content: "";
+    left: 21.5em;
+    top: -1.4em;
+}
+.logo_midle img{
+    height: 2cm;
+    width: 3cm;
+}
+
+/* navbar regular css start */
+.site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.site-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.site-navbar ul li a {
+    color: #fef6fc;
+    font-size: 17px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-navbar ul li {
+    padding-right: 70px;
+}
+
+.site-navbar ul li:last-child {
+    padding-right: 0;
+}
+
+.site-navbar ul li a:hover {
+    color: #00132b;
+}
+.site-navbar ul li a.active {
+    color: #00132b;
+}
+
+/* navbar regular css end */
+
+/* navbar content regular css start */
+.content-navbar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: -8.6rem;
+    margin-left: -5rem;
+}
+
+.content-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.content-navbar ul li a {
+    position: relative;
+    color: #7d2c2c;
+    font-size: 17px;
+    display: inline-block;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 5px 10px;
+}
+
+.content-navbar ul li {
+    padding-right: 35px;
+}
+
+.content-navbar ul li:last-child {
+    padding-right: 0;
+}
+
+.content-navbar ul li a:hover {
+    color: #0a0a49;
+}
+
+.content-navbar ul li a.active {
+    color: #0a0a49;
+    font-weight: bolder;
+}
+
+.content-navbar ul li a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3.7rem;
+    background-color: #ffffff;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
+    z-index: -1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* navbar regular css end */
+
+/* nav-toggler css start */
+
+.nav-toggler {
+    border: 3px solid #fff;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+    z-index: 99999;
+}
+
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: .3s;
+}
+
+.nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+}
+
+.nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+}
+
+.nav-toggler.toggler-open span {
+    background-color: transparent;
+}
+
+.nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+}
+
+.nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+}
+
+
+/* nav-toggler css start */
+
+
+/* intro-area css start */
+
+.intro-area {
+    height: calc(100vh - 61px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+/* intro-area css end */
+
+
+.left {
+
+    position: absolute;
+    background: #00132b;
+    width: 80px;
+    left: 0;
+    height: 87px;
+    top: 0;
+    text-align: center;
+    line-height: 87px;
+
+}
+
+.left  a i {
+    color: #fff;
+
+}
+.right {
+    position: absolute;
+    background: #00132b;
+    width: 80px;
+    right: 0;
+    height: 87px;
+    top: 0;
+    text-align: center;
+    line-height: 87px;
+
+}
+.right  a i {
+    color: #fff;
+
+}
+/** end header **/
+
+
+
+
+/** end header **/
+
+
+/** banner section **/
+
+.full_bg {
+     background: url(../images/banner.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 100vh;
+    padding-bottom: 150px;
+     position: relative;
+}
+
+.full_bg .carousel-indicators {
+    bottom: -43px;
+    margin-left: 0;
+    left: 20px;
+    right: inherit;
+    display: none;
+}
+
+.full_bg .carousel-indicators li.active {
+     display: inline;
+}
+
+.full_bg .carousel-indicators li {
+     text-indent: unset;
+     opacity: 1;
+     color: #fff;
+     font-size: 18px;
+     text-align: center;
+     line-height: 59px;
+     margin-right: 0px;
+     background: transparent; 
+     border: none;
+     text-indent: unset;
+     display: none;
+}
+
+
+
+.slider_main {
+     padding-top: 11%;
+}
+
+.cuplle {
+     position: inherit;
+     bottom: 0;
+     padding: 0;
+     z-index: 9999;
+     left: 0;
+     right: 0;
+}
+
+.photog {
+     z-index: 9999;
+     position: relative;
+     text-align: left;
+}
+
+.photog .read_more:focus {
+     box-shadow: none;
+}
+
+.photog h1 {
+     padding: 0;
+     font-size: 89px;
+     line-height: 90px;
+     color: #fff;
+     font-weight: bold;
+     text-align: left;
+     padding-bottom: 70px;
+}
+
+
+.photog .read_more {
+    margin-right: 15px;
+    font-weight: normal;
+    background:#fff;
+    color: #000;
+    height: 50px;
+    line-height: 50px;
+    max-width: 204px;
+}
+
+
+.photog .read_more:hover {background: #ed1c24; color: #fff;}
+.slider_main .carousel-item {
+     height: 100%;
+     width: 100%;
+}
+
+#banner1 .carousel-control-prev,
+#banner1 .carousel-control-next {
+     width:80px;
+     height: 80px;
+     background-color: #ed1c24;
+     color: #fff;
+     font-size: 35px;
+     opacity: 1;
+     top: 50%;
+     border-radius: 50%;
+    
+}
+
+#banner1 .carousel-control-prev {
+   
+      left: 0%;
+}
+
+#banner1 .carousel-control-next {
+     
+     right: 0%;
+}
+
+#banner1 .carousel-control-next:focus,
+#banner1 .carousel-control-next:hover,
+#banner1 .carousel-control-prev:focus,
+#banner1 .carousel-control-prev:hover {
+     background-color: #fff;
+     color: #ed1c24;
+}
+
+
+/** end banner section **/
+/** content1 section **/
+
+.content1 {
+    background: #fff;
+    padding: 80px 50px;
+    position: relative;
+    margin: 0 70px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
+    border-radius: 60px;
+    margin-top: -130px;
+    display: flex; /* Added to create a side-by-side layout */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Ensure space between video and text */
+    z-index: 1;
+}
+
+.container_width {
+    max-width: 1380px;
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+.content1 .titlepage {
+    padding-bottom: 0;
+}
+
+.content1 .titlepage h2 {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.content1 .titlepage h2::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    background: #ed1c24;
+    width: 93px;
+    height: 11px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.content1 .titlepage p {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    color: #111111;
+    padding: 35px 0px 50px 0px;
+    text-align: justify;
+}
+
+.content1_img {
+    flex: 1; /* Make the image container take available space */
+}
+
+.content1_img figure {
+    margin: 0;
+}
+/** end content1 section **/
+
+/** about section **/
+
+.about {
+    background: #fff;
+    padding: 80px 50px;
+    position: relative;
+    margin: 0 70px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
+    border-radius: 60px;
+    margin-top: -130px;
+    display: flex; /* Added to create a side-by-side layout */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Ensure space between video and text */
+    z-index: 1;
+}
+
+.container_width {
+    max-width: 1380px;
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+.about .titlepage {
+    padding-bottom: 0;
+}
+
+.about h1 {
+    position: relative;
+    text-align: center;
+    padding-bottom: 18px;
+}
+.about li {
+    font-size: 17px;
+    color: black;
+    font-style: italic;
+}
+.about p{
+    font-size: 14px;
+    font-style: normal;
+    margin-left: 20px;
+    color: #0a264a;
+}
+.about .titlepage h2 {
+    position: relative;
+    padding-bottom: 18px;
+}
+.about .titlepage h2::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    background: #ed1c24;
+    width: 93px;
+    height: 11px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.about .titlepage p {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+    padding: 35px 0px 50px 0px;
+    text-align: justify;
+}
+.about .titlepage ul li {
+    font-weight: normal;
+    font-size: 17px;
+    color: #111111;
+    padding: 35px 0px 0px 0px;
+    text-align: justify;
+}
+.about_img {
+    flex: 1; /* Make the image container take available space */
+    display: block;
+    justify-content: center;
+}
+
+.about_img figure {
+    margin: 0;
+}
+
+.about_vid {
+    flex: 1; /* Make the video container take available space */
+    display: block;
+    justify-content: center; /* Center the video horizontally */
+}
+
+.about_vid video {
+    max-width: 100%; /* Ensure the video scales within its container */
+    height: auto;
+    border-radius: 20px; /* Optional: add some styling to the video */
+    margin-top: 1rem;
+    margin-left: 0;
+    display: flex;
+}
+/** end about section **/
+
+/** types section **/
+
+.types {
+    background: #fff;
+    padding: 80px 50px;
+    position: relative;
+    margin: 0 70px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
+    border-radius: 60px;
+    margin-top: 130px;
+    display: flex; /* Added to create a side-by-side layout */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Ensure space between video and text */
+    z-index: 1;
+}
+
+.container_width {
+    max-width: 1380px;
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+.types .titlepage {
+    padding-bottom: 0;
+}
+
+.types .titlepage h2 {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.types .titlepage h2::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    background: #ed1c24;
+    width: 93px;
+    height: 11px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.types .titlepage p {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    color: #111111;
+    padding: 35px 0px 50px 0px;
+    text-align: justify;
+}
+.types .titlepage ul li {
+    font-weight: normal;
+    font-size: 17px;
+    color: #111111;
+    padding: 35px 0px 0px 0px;
+    text-align: justify;
+}
+.types_img {
+    flex: 1; /* Make the image container take available space */
+    display: block;
+    justify-content: center;
+}
+
+.types_img figure {
+    margin: 0;
+}
+
+.types_vid {
+    flex: 1; /* Make the video container take available space */
+    display: block;
+    justify-content: center; /* Center the video horizontally */
+}
+
+.types_vid video {
+    max-width: 60%; /* Ensure the video scales within its container */
+    height: auto;
+    border-radius: 20px; /* Optional: add some styling to the video */
+    margin-top: 1rem;
+    margin-left: 15rem;
+    display: flex;
+}
+/** end types section **/
+
+/** delivery section **/
+
+.delivery {
+    background: #fff;
+    padding: 80px 50px;
+    position: relative;
+    margin: 0 70px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
+    border-radius: 60px;
+    margin-top: 130px;
+    display: flex; /* Added to create a side-by-side layout */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Ensure space between video and text */
+    z-index: 1;
+}
+
+.container_width {
+    max-width: 1380px;
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+.delivery .titlepage {
+    padding-bottom: 0;
+}
+
+.delivery h1 {
+    position: relative;
+    text-align: center;
+    padding-bottom: 18px;
+}
+.delivery li {
+    font-size: 19px;
+    color: red;
+    font-style: italic;
+}
+.delivery p{
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 20px;
+    color: #2f2f2f;
+}
+.delivery .titlepage h2 {
+    position: relative;
+    padding-bottom: 18px;
+}
+.delivery .titlepage h2::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    background: #ed1c24;
+    width: 93px;
+    height: 11px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.delivery .titlepage p {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    color: #111111;
+    padding: 10px 0px 0px 0px;
+    text-align: justify;
+}
+.delivery .titlepage ul li {
+    font-weight: normal;
+    font-size: 17px;
+    color: #111111;
+    padding: 35px 0px 0px 0px;
+    text-align: justify;
+}
+.delivery_img {
+    flex: 1; /* Make the image container take available space */
+    display: block;
+    justify-content: center;
+}
+
+
+.delivery_vid {
+    flex: 1; /* Make the video container take available space */
+    display: block;
+    justify-content: center; /* Center the video horizontally */
+}
+
+.delivery_vid video {
+    max-width: 80%; /* Ensure the video scales within its container */
+    height: auto;
+    border-radius: 20px; /* Optional: add some styling to the video */
+    margin-top: 1rem;
+    margin-left: 7rem;
+    display: flex;
+    align-content: center;
+}
+/** end delivery section **/
+
+/** disease section**/
+.disease {
+    background: #fff;
+    padding: 80px 50px;
+    position: relative;
+    margin: 0 70px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
+    border-radius: 60px;
+    margin-top: 140px;
+    display: flex; /* Added to create a side-by-side layout */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Ensure space between video and text */
+    z-index: 1;
+}
+
+.container_width {
+    max-width: 1380px;
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+.disease .titlepage {
+    padding-bottom: 0;
+}
+
+.disease .titlepage h2 {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.disease .titlepage h2::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    background: #ed1c24;
+    width: 93px;
+    height: 11px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.disease .titlepage p {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    color: #111111;
+    padding: 35px 0px 50px 0px;
+    text-align: justify;
+}
+.disease .titlepage i {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0a0a49;
+    padding: 35px 0px 50px 0px;
+    text-align: justify;
+}
+.disease .titlepage ul li {
+    font-weight: normal;
+    font-size: 17px;
+    color: #111111;
+    padding: 35px 0px 0px 0px;
+    text-align: justify;
+}
+.disease .titlepage ul li img {
+    flex: 2cm; /* Make the image container take available space */
+    display: block;
+    justify-content: center;
+    width: 716px;
+    height: 403px;
+    margin-left: 16rem;
+
+}
+.disease .titlepage ul li figure figcaption{
+    text-align: center;
+    font-size: 12px;
+    margin-left: -4rem;
+}
+/** end disease section **/
+/** disease section**/
+.future {
+    background: #fff;
+    padding: 80px 50px;
+    position: relative;
+    margin: 0 70px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
+    border-radius: 60px;
+    margin-top: 140px;
+    display: flex; /* Added to create a side-by-side layout */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Ensure space between video and text */
+    z-index: 1;
+}
+
+.container_width {
+    max-width: 1380px;
+    padding: 0 15px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+.future .titlepage {
+    padding-bottom: 0;
+}
+
+.future .titlepage h2 {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.future .titlepage h2::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    background: #ed1c24;
+    width: 93px;
+    height: 11px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.future .titlepage p {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    color: #111111;
+    padding: 35px 0px 50px 0px;
+    text-align: justify;
+}
+.future .titlepage p a{
+    color: #0098ff;
+}
+
+.future .titlepage img {
+    flex: 2cm; /* Make the image container take available space */
+    display: block;
+    justify-content: center;
+    width: 60%;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 16rem;
+
+}
+/** end disease section **/
+
+/** coronata section **/
+
+.coronata {
+    background: #fff;
+   padding-top: 100px;
+  
+}
+
+.coronata .titlepage {
+     padding-bottom: 0;
+}
+
+.coronata .titlepage p {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    color: #111111;
+    padding: 35px 0px 50px 0px;
+}
+
+
+.coronata_img figure {
+     margin: 0;
+}
+
+/** end coronata section **/
+
+/** news section **/
+
+.news {
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 100px;
+
+
+}
+
+.news .titlepage {
+    padding-bottom: 0;
+}
+.news .titlepage h2 {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+.news .titlepage p {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    color: #111111;
+    padding: 0;
+}
+.news .titlepage b {
+    font-size: 15px;
+    line-height: 30px;
+    color: #111111;
+    padding: 35px 0px 50px 0px;
+}
+.news .titlepage h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.news .titlepage h3::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    background: #ed1c24;
+    width: 95px;
+    height: 5px;
+    margin-left: -5px;
+    border-radius: 20px;
+}
+
+.news .read_more{
+    margin-right: 15px;
+    font-weight: normal;
+    font-size: 14px;
+    background: #0098ff;
+    color: #000;
+    height: 50px;
+    line-height: 50px;
+    max-width: 150px;
+}
+.news .read_more:hover {background: #ed1c24; color: #fff;}
+
+
+.news_img figure {
+    margin: 0;
+}
+.news_img img{
+
+    height: 4in;
+    width: 4in;
+}
+
+/** end news section **/
+
+/** concepts section **/
+
+.concepts {
+    background: #fff;
+    padding: 0 30px 0 30px;
+    padding-top: 70px;
+
+
+}
+.concepts .titlepage {padding-bottom: 30px;}
+.concepts .titlepage p {padding-top: 5px;}
+.mendel {
+    margin-top: 10px;
+    background: #fff;
+    padding: 25px 25px 0px 25px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.20);
+    margin-bottom: 70px;
+}
+.mendel figure img {
+    height: 2in;
+    width: 3in;
+}
+.genetics h3 {
+    color: #151515;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.genetics p {
+    padding: 0 0 20px 0;
+    color: #0f100d;
+    line-height: 28px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.genetics ul {
+    padding: 0 0 20px 20px;
+    color: #0f100d;
+    line-height: 28px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+
+.genetics ul li {
+    color: #0f100d;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: oblique;
+}
+.genetics p a {
+    padding: 0 0 20px 0;
+    color: #0f100d;
+    line-height: 28px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 12px;
+    
+}
+.genetics {position:relative;}
+.genetics::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    width: 80px;
+    height: 81px;
+    text-align: center;
+    margin: 0 auto;
+}
+/** end concepts section **/
+
+/** timeline section**/
+
+.timeline {
+    margin-top: 10px;
+    background: #fff;
+    padding: 25px 25px 25px 25px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.20);
+    margin-bottom: 100px;
+}
+
+.timeline h3 {
+    color: #151515;
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.timeline::after {
+    content: '';
+    margin-top: 70px;
+    position: absolute;
+    width: 3px;
+    background: #006E51;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+    margin-bottom: 100px;
+
+}
+
+.history {
+    padding: 35px 45px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+}
+
+.history.left {
+    left: 0;
+}
+
+.history.right {
+    left: 50%;
+}
+
+.history::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -8px;
+    background: #ffffff;
+    border: 2px solid #006E51;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.history.right::after {
+    left: -8px;
+}
+
+.history::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: #006E51;
+    z-index: 1;
+}
+
+.history.right::before {
+    left: 8px;
+}
+
+.history .date {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #006E51;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.history.left .date {
+    right: -60px;
+}
+
+.history.right .date {
+    left: -60px;
+}
+
+.history .content {
+    padding: 25px 25px 25px 25px;
+    background: #F6D155;
+    top: -30px;
+    position: relative;
+    border-radius: 0 500px 500px 0;
+}
+
+.content:hover {
+    background: #02233b;
+    color: #ffffff;
+    transition: ease-in all 0.5s;
+}
+.history.right .content {
+    padding: 25px 25px 25px 40px;
+    border-radius: 500px 0 0 500px;
+    top: -30px;
+    position: relative;
+}
+
+.history .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    font-weight: normal;
+    color: #006E51;
+}
+
+.history .content p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    .timeline::after {
+        left: 90px;
+    }
+
+    .history {
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 30px;
+    }
+
+    .history.right {
+        left: 0%;
+    }
+
+    .history.left::after,
+    .history.right::after {
+        left: 82px;
+    }
+
+    .history.left::before,
+    .history.right::before {
+        left: 100px;
+        border-color: transparent #006E51 transparent transparent;
+    }
+
+    .history.left .date,
+    .history.right .date {
+        right: auto;
+        left: 15px;
+    }
+
+
+    .history.left .content,
+    .history.right .content {
+        padding: 15px 15px 15px 30px;
+        border-radius: 500px 0 0 500px;
+    }
+}
+
+/** end timeline section **/
+
+/** cases section **/
+
+.cases {
+    background: #fff;
+    padding: 0 30px 0 30px;
+   padding-top: 70px;
+
+
+}
+.cases .titlepage {padding-bottom: 30px;}
+.cases .titlepage p {padding-top: 5px;}
+.latest {
+    margin-top: 10px;
+    background: #fff;
+    padding: 25px 25px 0px 25px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.20);
+    margin-bottom: 70px;
+}
+.latest figure img {
+    height: 2in;
+    width: 4in;
+}
+
+.latest .read_more {
+    margin: 0 auto;
+    border-radius: 5%;
+    display: block;
+    position: absolute;
+    z-index: 99999;
+    max-width: 174px;
+    height: 51px;
+    line-height: 51px;
+    font-weight: normal;
+    top: 17%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.nostrud h3 {
+    color: #151515;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    padding-top: 52px;
+}
+
+.nostrud p {
+    padding: 5px 0 60px 0;
+    color: #0f100d;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+.nostrud {position:relative;}
+.nostrud::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    width: 80px;
+    height: 81px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/** end cases section **/
+
+/** team section **/
+
+.team {
+    background: #fff;
+    padding: 0 30px 0 30px;
+    padding-top: 70px;
+
+}
+.team .titlepage {padding-bottom: 30px;}
+.team .titlepage p {padding-top: 5px;}
+.latest {
+    margin-top: 5px;
+    background: #fff;
+    padding: 25px 25px 0px 25px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.20);
+    margin-bottom: 70px;
+}
+.latest figure img {
+    height: 2.5in;
+    width: 2.5in;
+}
+
+.nostrud h3 {
+    color: #151515;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    padding-top: 52px;
+}
+
+.nostrud p {
+    padding: 5px 0 60px 0;
+    color: #0f100d;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+.nostrud {position:relative;}
+.nostrud::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    width: 80px;
+    height: 81px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/** end team section **/
+
+/** contact **/
+
+.contact {
+    padding-bottom: 150px;
+    position: relative;
+    padding-top: 50px;
+}
+
+
+
+.contact .titlepage {padding-bottom: 0; margin-top: -5rem; text-align: center}
+.main_form {padding-top:45px; margin-top: -3rem; margin-left: -5rem;}
+.main_form .contactus {
+     margin-top: 100px;
+     margin-bottom: 100px;
+     padding: 10px 25px 20px 15px;
+     white-space: nowrap;
+     width: 100%;
+     height: 66px;
+     background: #fff;
+     color: #000000;
+     font-size: 17px;
+     font-weight: normal;
+     border: #9d9d9c solid 2px;
+}
+.main_form p{
+    margin-bottom: 10px;
+}
+.main_form .send_btn {
+     font-size: 15px;
+     transition: ease-in all 0.5s;
+     background-color: #2b2b2b;
+     text-transform: uppercase;
+     text-align: center;
+     color: #fff;
+     max-width: 150px;
+     width: 100%;
+     display: block;
+     font-weight: bold;
+     height: 50px;
+     line-height: 50px;
+
+}
+
+.main_form .send_btn:hover {
+     background-color: #e92f0b;
+     transition: ease-in all 0.3s;
+     color: #fff;
+}
+
+#request *::placeholder {
+     color: #a3a3a2;
+     opacity: 1;
+}
+
+
+/** end contact **/
+
+
+
+
+/** footer **/
+
+.footer {
+    padding-top: 80px;
+    background: #111111;
+    text-align: center;
+}
+
+.hedingh3 {padding-bottom: 25px;}
+.hedingh3 h3 {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 20px;
+    line-height: 23px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.hedingh3 p {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+ul.menu_footer {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+ul.menu_footer li a {
+    color: #979793;
+    font-size: 17px;
+    line-height: 18px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+ul.menu_footer li a:hover {
+    color: #e92f0b;
+}
+
+
+
+
+
+ul.inst li {
+    display: inline-block;
+    margin: 4px;
+}
+
+
+ul.top_infomation li {
+    display: block;
+    font-size: 17px;
+    color: #fff;
+}
+
+ul.top_infomation li:last-child {
+    padding-right: 0;
+}
+
+ul.top_infomation li i {
+    margin-right: 5px;
+    color: #fff;
+    text-align: center;
+    transition: ease-in all 0.5s;
+}
+
+ul.top_infomation li a {
+    color: #fff;
+}
+
+ul.top_infomation li a:hover {
+    color: #e92f0b;
+}
+
+ul.top_infomation li i:hover {
+    background: #eb4746;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: ease-in all 0.5s;
+}
+
+
+.copyright {
+    margin-top: 60px;
+   
+    padding-bottom: 20px;
+}
+
+.copyright p {
+    border-top:#d1d1d1 solid 1px;
+    padding-top: 20px;
+    color: #d1d1d1;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.copyright a {
+    color: #d1d1d1;
+}
+
+.copyright a:hover {
+    color: #ed1c24;
+}
+
+
+/** end footer **/
+
+
+
+/**  inner page css **/
+
+
+
+.inner_page .full_bg {
+     height: 106px;
+     padding-bottom: 0;
+    
+}
+.inner_page .about {
+    margin-top: 145px;
+    margin-bottom: 80px;
+}
+.inner_page .coronata {
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+.inner_page .cases {padding-top: 140px;
+padding-bottom: 40px;}
+.inner_page .contact {
+    padding-top: 145px;
+    padding-bottom: 80px;
+}
